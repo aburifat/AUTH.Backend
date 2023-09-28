@@ -1,11 +1,14 @@
-﻿namespace AUTH.Backend.Utilities;
-
-public static class DateTimeUtilities
+﻿namespace AUTH.Backend.Utilities
 {
-    public static DateTime CurrentDateTime()
+    public static class DateTimeUtilities
     {
-        DateTime utcNow = DateTime.UtcNow;
-        DateTime bangladeshTime = utcNow.AddHours(6);
-        return bangladeshTime;
+        public static DateTime CurrentDateTime()
+        {
+            DateTime utcNow = DateTime.UtcNow;
+
+            DateTime bangladeshTime = utcNow.AddHours(6);
+
+            return bangladeshTime;
+        }
     }
 }
